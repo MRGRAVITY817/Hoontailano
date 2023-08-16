@@ -5,17 +5,17 @@
 //  Created by Hoon Wee on 2023/08/17.
 //
 
-import Foundation
+import Combine
 
 extension MenuList {
-    struct ViewModel {
-        let sections: [MenuSection]
+    class ViewModel: ObservableObject {
+        @Published private(set) var sections: [MenuSection]
         
         init(
             menu: [MenuItem],
             menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory
         ) {
-            self.sections = menuGrouping(menu)
+            self.sections = menuGrouping([])
         }
     }
 }

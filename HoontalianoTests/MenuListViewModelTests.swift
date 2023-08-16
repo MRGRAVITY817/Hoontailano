@@ -23,4 +23,15 @@ final class MenuListViewModelTests: XCTestCase {
         XCTAssertTrue(called)
         XCTAssertEqual(sections, inputSections)
     }
+    
+    func test_WhenFetchingStarts() {
+        /// When fetching starts, the `ViewModel` should publish empty menu
+        let viewModel = MenuList.ViewModel(menu: [.fixture()])
+        
+        XCTAssertTrue(viewModel.sections.isEmpty)
+    }
+    
+    func test_WhenFetchingSucceeds() {}
+    
+    func test_WhenFetchingFails() {}
 }
