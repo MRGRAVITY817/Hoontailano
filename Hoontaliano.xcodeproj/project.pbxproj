@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9863DCC12A8CB946000F1FA3 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCC02A8CB945000F1FA3 /* MenuListView.swift */; };
+		9863DCC42A8D1F21000F1FA3 /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCC32A8D1F21000F1FA3 /* MenuItem+Fixture.swift */; };
 		98CA0C5D2A8C9CC600BCEB67 /* HoontalianoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */; };
 		98CA0C5F2A8C9CC600BCEB67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */; };
 		98CA0C612A8C9CC700BCEB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA0C602A8C9CC700BCEB67 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		9863DCC02A8CB945000F1FA3 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
+		9863DCC32A8D1F21000F1FA3 /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
 		98CA0C592A8C9CC600BCEB67 /* Hoontaliano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoontaliano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoontalianoApp.swift; sourceTree = "<group>"; };
 		98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 				9863DCC02A8CB945000F1FA3 /* MenuListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9863DCC22A8D1F0D000F1FA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9863DCC32A8D1F21000F1FA3 /* MenuItem+Fixture.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		98CA0C502A8C9CC600BCEB67 = {
@@ -121,6 +131,7 @@
 		98CA0C6D2A8C9CC700BCEB67 /* HoontalianoTests */ = {
 			isa = PBXGroup;
 			children = (
+				9863DCC22A8D1F0D000F1FA3 /* Extensions */,
 				98CA0C6E2A8C9CC700BCEB67 /* HoontalianoTests.swift */,
 				98CA0C872A8C9D4100BCEB67 /* MenuGroupingTests.swift */,
 			);
@@ -276,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CA0C6F2A8C9CC700BCEB67 /* HoontalianoTests.swift in Sources */,
+				9863DCC42A8D1F21000F1FA3 /* MenuItem+Fixture.swift in Sources */,
 				98CA0C882A8C9D4100BCEB67 /* MenuGroupingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

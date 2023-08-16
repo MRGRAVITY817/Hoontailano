@@ -18,9 +18,9 @@ final class MenuGroupingTests: XCTestCase {
     }
     
     func test_MenuWithOneCategory_ReturnsOneSection() throws {
-        let menu = [
-            MenuItem(category: "pasta", name: "Bolognese"),
-            MenuItem(category: "pasta", name: "Tomato Shrimp"),
+        let menu: [MenuItem] = [
+            .fixture(category: "pasta", name: "Bolognese"),
+            .fixture(category: "pasta", name: "Tomato Shrimp"),
         ]
         
         let sections = groupMenuByCategory(menu)
@@ -35,12 +35,12 @@ final class MenuGroupingTests: XCTestCase {
     }
     
     func test_MenuWithManyCategories_ReturnsOneSectionPerCategory() {
-        let menu = [
-            MenuItem(category: "pasta", name: "Tomato Beef"),
-            MenuItem(category: "pasta", name: "Olive Oil"),
-            MenuItem(category: "drinks", name: "Coke"),
-            MenuItem(category: "drinks", name: "Fanta"),
-            MenuItem(category: "desserts", name: "Ice cream"),
+        let menu: [MenuItem] = [
+            .fixture(category: "pasta", name: "Tomato Beef"),
+            .fixture(category: "pasta", name: "Olive Oil"),
+            .fixture(category: "drinks", name: "Coke"),
+            .fixture(category: "drinks", name: "Fanta"),
+            .fixture(category: "desserts", name: "Ice cream"),
         ]
         
         let sections = groupMenuByCategory(menu)
