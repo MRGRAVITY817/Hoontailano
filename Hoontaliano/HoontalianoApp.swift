@@ -12,7 +12,7 @@ struct HoontalianoApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MenuList(sections: groupMenuByCategory(MockData().menu))
+                MenuList(viewModel: .init(menu: MockData().menu))
                     .navigationTitle("Hoontalia 🇮🇹🇰🇷")
             }
         }
