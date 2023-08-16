@@ -12,7 +12,7 @@ extension MenuList {
         @Published private(set) var sections: [MenuSection]
         
         init(
-            menu: [MenuItem],
+            menuFetching: MenuFetching,
             menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory
         ) {
             self.sections = menuGrouping([])

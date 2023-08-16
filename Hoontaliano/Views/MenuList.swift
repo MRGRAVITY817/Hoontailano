@@ -25,6 +25,6 @@ struct MenuList: View {
 
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuList(viewModel: .init(menu: MockData().menu))
+        MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder()))
     }
 }

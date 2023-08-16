@@ -17,6 +17,7 @@
 		9863DCD12A8D2BF7000F1FA3 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD02A8D2BF7000F1FA3 /* MenuListViewModelTests.swift */; };
 		9863DCD42A8D2D0D000F1FA3 /* MenuList.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD32A8D2D0D000F1FA3 /* MenuList.ViewModel.swift */; };
 		9863DCD62A8D336A000F1FA3 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD52A8D336A000F1FA3 /* MenuFetching.swift */; };
+		9863DCD82A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD72A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift */; };
 		98CA0C5D2A8C9CC600BCEB67 /* HoontalianoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */; };
 		98CA0C5F2A8C9CC600BCEB67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */; };
 		98CA0C612A8C9CC700BCEB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA0C602A8C9CC700BCEB67 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		9863DCD02A8D2BF7000F1FA3 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
 		9863DCD32A8D2D0D000F1FA3 /* MenuList.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.ViewModel.swift; sourceTree = "<group>"; };
 		9863DCD52A8D336A000F1FA3 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
+		9863DCD72A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
 		98CA0C592A8C9CC600BCEB67 /* Hoontaliano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoontaliano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoontalianoApp.swift; sourceTree = "<group>"; };
 		98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			children = (
 				98CA0C8F2A8C9DE700BCEB67 /* groupMenuByCategory.swift */,
 				9863DCC92A8D24C2000F1FA3 /* MockData.swift */,
+				9863DCD72A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9863DCD82A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift in Sources */,
 				98CA0C932A8CA81700BCEB67 /* Collection+Safe.swift in Sources */,
 				9863DCCF2A8D260A000F1FA3 /* MenuRow.ViewModel.swift in Sources */,
 				9863DCD62A8D336A000F1FA3 /* MenuFetching.swift in Sources */,

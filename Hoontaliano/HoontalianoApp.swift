@@ -12,9 +12,10 @@ struct HoontalianoApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MenuList(viewModel: .init(menu: MockData().menu))
+                MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder()))
                     .navigationTitle("Hoontalia 🇮🇹🇰🇷")
             }
         }
     }
 }
+
