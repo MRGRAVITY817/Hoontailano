@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9863DCC12A8CB946000F1FA3 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCC02A8CB945000F1FA3 /* MenuListView.swift */; };
 		98CA0C5D2A8C9CC600BCEB67 /* HoontalianoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */; };
 		98CA0C5F2A8C9CC600BCEB67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */; };
 		98CA0C612A8C9CC700BCEB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA0C602A8C9CC700BCEB67 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9863DCC02A8CB945000F1FA3 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
 		98CA0C592A8C9CC600BCEB67 /* Hoontaliano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoontaliano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoontalianoApp.swift; sourceTree = "<group>"; };
 		98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9863DCBF2A8CB939000F1FA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9863DCC02A8CB945000F1FA3 /* MenuListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		98CA0C502A8C9CC600BCEB67 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		98CA0C5B2A8C9CC600BCEB67 /* Hoontaliano */ = {
 			isa = PBXGroup;
 			children = (
+				9863DCBF2A8CB939000F1FA3 /* Views */,
 				98CA0C912A8CA80400BCEB67 /* Extensions */,
 				98CA0C8A2A8C9DAA00BCEB67 /* Models */,
 				98CA0C892A8C9DA400BCEB67 /* Utils */,
@@ -251,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CA0C932A8CA81700BCEB67 /* Collection+Safe.swift in Sources */,
+				9863DCC12A8CB946000F1FA3 /* MenuListView.swift in Sources */,
 				98CA0C8C2A8C9DB500BCEB67 /* MenuItem.swift in Sources */,
 				98CA0C902A8C9DE700BCEB67 /* groupMenuByCategory.swift in Sources */,
 				98CA0C5F2A8C9CC600BCEB67 /* ContentView.swift in Sources */,

@@ -11,3 +11,7 @@ struct MenuSection {
     let items: [MenuItem]
     let category: String
 }
+
+extension MenuSection: Identifiable {
+    var id: String { category }
+}
