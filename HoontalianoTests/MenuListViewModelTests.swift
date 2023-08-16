@@ -7,8 +7,12 @@
 
 @testable import Hoontaliano
 import XCTest
+import Combine
 
 final class MenuListViewModelTests: XCTestCase {
+    
+    var cancellables = Set<AnyCancellable>()
+    
     func test_CallsGivenGroupingFunction() {
         var called = false
         let inputSections = [MenuSection.fixture()]
@@ -32,7 +36,34 @@ final class MenuListViewModelTests: XCTestCase {
         XCTAssertTrue(viewModel.sections.isEmpty)
     }
     
-    func test_WhenFetchingSucceeds() {}
+    func test_WhenFetchingSucceeds() {
+        var receivedMenu: [MenuItem]?
+        let expectedSections = [MenuSection.fixture()]
+        let spyClosure: ([MenuItem]) -> [MenuSection] = { items in
+            receivedMenu = items
+            return expectedSections
+        }
+        
+        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder(),
+                                           menuGrouping: spyClosure)
+        // Expect asynchronous value
+        let expectation = XCTestExpectation(description: "Publishes sections built from received menu and given grouping closure")
+        
+        viewModel
+            .$sections
+            .dropFirst()
+            .sink { value in
+                // Ensure the grouping closure is called with the received menu
+                XCTAssertEqual(receivedMenu, MockData().menu)
+                // Ensure the published value is the result of the grouping closure
+                XCTAssertEqual(value, expectedSections)
+                expectation.fulfill()
+            }
+            .store(in: &cancellables)
+        
+        wait(for: [expectation], timeout: 1)
+        
+    }
     
     func test_WhenFetchingFails() {}
 }
