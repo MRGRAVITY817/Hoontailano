@@ -8,8 +8,8 @@
 import Foundation
 
 struct MenuSection {
-    let items: [MenuItem]
     let category: String
+    let items: [MenuItem]
 }
 
 extension MenuSection: Identifiable {
