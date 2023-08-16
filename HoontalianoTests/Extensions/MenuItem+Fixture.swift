@@ -11,9 +11,10 @@ extension MenuItem {
     static func fixture(
         category: String = "category",
         name: String = "name",
-        spicy: Bool = false
+        spicy: Bool = false,
+        price: Double = 0.00
     ) -> MenuItem {
-        MenuItem(category: category, name: name, spicy: spicy)
+        MenuItem(category: category, name: name, spicy: spicy, price: price)
     }
 }
 
