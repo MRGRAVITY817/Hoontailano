@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuListView: View {
+struct MenuList: View {
     let sections: [MenuSection]
     
     var body: some View {
@@ -15,7 +15,7 @@ struct MenuListView: View {
             ForEach(sections) { section in
                 Section(header: Text(section.category)) {
                     ForEach(section.items) { item in
-                        Text(item.name)
+                        MenuRow(item: item)
                     }
                 }
             }
@@ -25,6 +25,6 @@ struct MenuListView: View {
 
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuListView(sections: [])
+        MenuList(sections: groupMenuByCategory(MockData().menu))
     }
 }
