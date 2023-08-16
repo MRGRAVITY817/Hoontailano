@@ -9,4 +9,5 @@ import Foundation
 
 struct MenuSection {
     let items: [MenuItem]
+    let category: String
 }

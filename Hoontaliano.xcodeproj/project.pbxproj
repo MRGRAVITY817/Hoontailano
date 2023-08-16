@@ -12,23 +12,15 @@
 		98CA0C612A8C9CC700BCEB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA0C602A8C9CC700BCEB67 /* Assets.xcassets */; };
 		98CA0C652A8C9CC700BCEB67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA0C642A8C9CC700BCEB67 /* Preview Assets.xcassets */; };
 		98CA0C6F2A8C9CC700BCEB67 /* HoontalianoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C6E2A8C9CC700BCEB67 /* HoontalianoTests.swift */; };
-		98CA0C792A8C9CC700BCEB67 /* HoontalianoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C782A8C9CC700BCEB67 /* HoontalianoUITests.swift */; };
-		98CA0C7B2A8C9CC700BCEB67 /* HoontalianoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C7A2A8C9CC700BCEB67 /* HoontalianoUITestsLaunchTests.swift */; };
 		98CA0C882A8C9D4100BCEB67 /* MenuGroupingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C872A8C9D4100BCEB67 /* MenuGroupingTests.swift */; };
 		98CA0C8C2A8C9DB500BCEB67 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C8B2A8C9DB500BCEB67 /* MenuItem.swift */; };
 		98CA0C8E2A8C9DC200BCEB67 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C8D2A8C9DC200BCEB67 /* MenuSection.swift */; };
 		98CA0C902A8C9DE700BCEB67 /* groupMenuByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C8F2A8C9DE700BCEB67 /* groupMenuByCategory.swift */; };
+		98CA0C932A8CA81700BCEB67 /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C922A8CA81700BCEB67 /* Collection+Safe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		98CA0C6B2A8C9CC700BCEB67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 98CA0C512A8C9CC600BCEB67 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98CA0C582A8C9CC600BCEB67;
-			remoteInfo = Hoontaliano;
-		};
-		98CA0C752A8C9CC700BCEB67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 98CA0C512A8C9CC600BCEB67 /* Project object */;
 			proxyType = 1;
@@ -46,13 +38,13 @@
 		98CA0C642A8C9CC700BCEB67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98CA0C6A2A8C9CC700BCEB67 /* HoontalianoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoontalianoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA0C6E2A8C9CC700BCEB67 /* HoontalianoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoontalianoTests.swift; sourceTree = "<group>"; };
-		98CA0C742A8C9CC700BCEB67 /* HoontalianoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoontalianoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA0C782A8C9CC700BCEB67 /* HoontalianoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoontalianoUITests.swift; sourceTree = "<group>"; };
 		98CA0C7A2A8C9CC700BCEB67 /* HoontalianoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoontalianoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		98CA0C872A8C9D4100BCEB67 /* MenuGroupingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGroupingTests.swift; sourceTree = "<group>"; };
 		98CA0C8B2A8C9DB500BCEB67 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		98CA0C8D2A8C9DC200BCEB67 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		98CA0C8F2A8C9DE700BCEB67 /* groupMenuByCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupMenuByCategory.swift; sourceTree = "<group>"; };
+		98CA0C922A8CA81700BCEB67 /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +56,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		98CA0C672A8C9CC700BCEB67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98CA0C712A8C9CC700BCEB67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,7 +80,6 @@
 			children = (
 				98CA0C592A8C9CC600BCEB67 /* Hoontaliano.app */,
 				98CA0C6A2A8C9CC700BCEB67 /* HoontalianoTests.xctest */,
-				98CA0C742A8C9CC700BCEB67 /* HoontalianoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +87,7 @@
 		98CA0C5B2A8C9CC600BCEB67 /* Hoontaliano */ = {
 			isa = PBXGroup;
 			children = (
+				98CA0C912A8CA80400BCEB67 /* Extensions */,
 				98CA0C8A2A8C9DAA00BCEB67 /* Models */,
 				98CA0C892A8C9DA400BCEB67 /* Utils */,
 				98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */,
@@ -157,6 +142,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		98CA0C912A8CA80400BCEB67 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				98CA0C922A8CA81700BCEB67 /* Collection+Safe.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,24 +188,6 @@
 			productReference = 98CA0C6A2A8C9CC700BCEB67 /* HoontalianoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		98CA0C732A8C9CC700BCEB67 /* HoontalianoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 98CA0C842A8C9CC700BCEB67 /* Build configuration list for PBXNativeTarget "HoontalianoUITests" */;
-			buildPhases = (
-				98CA0C702A8C9CC700BCEB67 /* Sources */,
-				98CA0C712A8C9CC700BCEB67 /* Frameworks */,
-				98CA0C722A8C9CC700BCEB67 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				98CA0C762A8C9CC700BCEB67 /* PBXTargetDependency */,
-			);
-			name = HoontalianoUITests;
-			productName = HoontalianoUITests;
-			productReference = 98CA0C742A8C9CC700BCEB67 /* HoontalianoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,10 +202,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					98CA0C692A8C9CC700BCEB67 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 98CA0C582A8C9CC600BCEB67;
-					};
-					98CA0C732A8C9CC700BCEB67 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 98CA0C582A8C9CC600BCEB67;
 					};
@@ -251,7 +222,6 @@
 			targets = (
 				98CA0C582A8C9CC600BCEB67 /* Hoontaliano */,
 				98CA0C692A8C9CC700BCEB67 /* HoontalianoTests */,
-				98CA0C732A8C9CC700BCEB67 /* HoontalianoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,13 +243,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98CA0C722A8C9CC700BCEB67 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -287,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CA0C932A8CA81700BCEB67 /* Collection+Safe.swift in Sources */,
 				98CA0C8C2A8C9DB500BCEB67 /* MenuItem.swift in Sources */,
 				98CA0C902A8C9DE700BCEB67 /* groupMenuByCategory.swift in Sources */,
 				98CA0C5F2A8C9CC600BCEB67 /* ContentView.swift in Sources */,
@@ -304,15 +268,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98CA0C702A8C9CC700BCEB67 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98CA0C792A8C9CC700BCEB67 /* HoontalianoUITests.swift in Sources */,
-				98CA0C7B2A8C9CC700BCEB67 /* HoontalianoUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -320,11 +275,6 @@
 			isa = PBXTargetDependency;
 			target = 98CA0C582A8C9CC600BCEB67 /* Hoontaliano */;
 			targetProxy = 98CA0C6B2A8C9CC700BCEB67 /* PBXContainerItemProxy */;
-		};
-		98CA0C762A8C9CC700BCEB67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 98CA0C582A8C9CC600BCEB67 /* Hoontaliano */;
-			targetProxy = 98CA0C752A8C9CC700BCEB67 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -560,50 +510,6 @@
 			};
 			name = Release;
 		};
-		98CA0C852A8C9CC700BCEB67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YRKGHB8X7N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.hoonwee.HoontalianoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Hoontaliano;
-			};
-			name = Debug;
-		};
-		98CA0C862A8C9CC700BCEB67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YRKGHB8X7N;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.hoonwee.HoontalianoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Hoontaliano;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -630,15 +536,6 @@
 			buildConfigurations = (
 				98CA0C822A8C9CC700BCEB67 /* Debug */,
 				98CA0C832A8C9CC700BCEB67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		98CA0C842A8C9CC700BCEB67 /* Build configuration list for PBXNativeTarget "HoontalianoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98CA0C852A8C9CC700BCEB67 /* Debug */,
-				98CA0C862A8C9CC700BCEB67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
