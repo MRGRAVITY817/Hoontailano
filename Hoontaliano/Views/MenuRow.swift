@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct MenuRow: View {
-    let item: MenuItem
+    let viewModel: ViewModel
     
     var body: some View {
-        Text(item.name)
+        Text(viewModel.text)
     }
 }
 
 struct MenuRow_Previews: PreviewProvider {
     static var previews: some View {
-        MenuRow(item: MenuItem(
+        MenuRow(viewModel: .init(item: MenuItem(
             category: "pastas",
             name: "Penne all'Arrabbiata",
             spicy: false,
             price: 12.99)
-        )
+        ))
     }
 }
