@@ -9,4 +9,5 @@ import Foundation
 
 struct MenuItem {
     let category: String
+    let name: String
 }

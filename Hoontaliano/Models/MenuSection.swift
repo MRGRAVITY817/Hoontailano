@@ -7,4 +7,6 @@
 
 import Foundation
 
-struct MenuSection {}
+struct MenuSection {
+    let items: [MenuItem]
+}
