@@ -54,15 +54,17 @@ final class MenuListViewModelTests: XCTestCase {
         // Expect asynchronous value
         let expectation = XCTestExpectation(description: "Publishes sections built from received menu and given grouping closure")
         
-        // Assert
         viewModel
             .$sections         // listen to published value
             .dropFirst()       // drop first one (initialized value)
             .sink { value in   // use .sink() to subscribe publisher
-                // Ensure the grouping closure is called with the received menu
+                
+                // Assert
                 XCTAssertEqual(receivedMenu, expectedMenu)
-                // Ensure the published value is the result of the grouping closure
                 XCTAssertEqual(value, expectedSections)
+                
+                // We have to tell that expectation has been fulfilled,
+                // or else it will hang until timeout.
                 expectation.fulfill()
             }
             .store(in: &cancellables) // should store async value's ref

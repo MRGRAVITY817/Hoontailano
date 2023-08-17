@@ -9,6 +9,7 @@
 import Combine
 import Foundation
 
+/// A stub that simulates the system that fetches menu.
 class MenuFetchingStub: MenuFetching {
     
     let result: Result<[MenuItem], Error>
