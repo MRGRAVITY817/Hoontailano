@@ -18,6 +18,7 @@
 		9863DCD42A8D2D0D000F1FA3 /* MenuList.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD32A8D2D0D000F1FA3 /* MenuList.ViewModel.swift */; };
 		9863DCD62A8D336A000F1FA3 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD52A8D336A000F1FA3 /* MenuFetching.swift */; };
 		9863DCD82A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD72A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift */; };
+		9863DCDB2A8DAF47000F1FA3 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCDA2A8DAF47000F1FA3 /* MenuFetchingStub.swift */; };
 		98CA0C5D2A8C9CC600BCEB67 /* HoontalianoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */; };
 		98CA0C5F2A8C9CC600BCEB67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */; };
 		98CA0C612A8C9CC700BCEB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA0C602A8C9CC700BCEB67 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		9863DCD32A8D2D0D000F1FA3 /* MenuList.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.ViewModel.swift; sourceTree = "<group>"; };
 		9863DCD52A8D336A000F1FA3 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
 		9863DCD72A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
+		9863DCDA2A8DAF47000F1FA3 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
 		98CA0C592A8C9CC600BCEB67 /* Hoontaliano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoontaliano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoontalianoApp.swift; sourceTree = "<group>"; };
 		98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			name = MenuList;
 			sourceTree = "<group>";
 		};
+		9863DCD92A8DAF34000F1FA3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9863DCDA2A8DAF47000F1FA3 /* MenuFetchingStub.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		98CA0C502A8C9CC600BCEB67 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +179,7 @@
 		98CA0C6D2A8C9CC700BCEB67 /* HoontalianoTests */ = {
 			isa = PBXGroup;
 			children = (
+				9863DCD92A8DAF34000F1FA3 /* Utils */,
 				9863DCC22A8D1F0D000F1FA3 /* Extensions */,
 				98CA0C6E2A8C9CC700BCEB67 /* HoontalianoTests.swift */,
 				98CA0C872A8C9D4100BCEB67 /* MenuGroupingTests.swift */,
@@ -341,6 +352,7 @@
 				9863DCC42A8D1F21000F1FA3 /* MenuItem+Fixture.swift in Sources */,
 				9863DCCC2A8D255D000F1FA3 /* MenuRowViewModelTests.swift in Sources */,
 				98CA0C882A8C9D4100BCEB67 /* MenuGroupingTests.swift in Sources */,
+				9863DCDB2A8DAF47000F1FA3 /* MenuFetchingStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

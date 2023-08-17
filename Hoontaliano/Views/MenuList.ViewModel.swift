@@ -22,6 +22,7 @@ extension MenuList {
             self.sections = menuGrouping([])
             menuFetching
                 .fetchMenu()
+                // .sink will attach subscriber to the publisher
                 .sink(
                     receiveCompletion: { _ in },
                     // Since menuFetching is async behavior,
@@ -34,6 +35,8 @@ extension MenuList {
                         self?.sections = menuGrouping(value)
                     }
                 )
+                // we should store the async value's memory reference
+                // or else we'll lose it before it gets a chance to emit values.
                 .store(in: &cancellables)
         }
     }

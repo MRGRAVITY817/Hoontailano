@@ -37,29 +37,35 @@ final class MenuListViewModelTests: XCTestCase {
     }
     
     func test_WhenFetchingSucceeds() {
+        // Arrange
         var receivedMenu: [MenuItem]?
         let expectedSections = [MenuSection.fixture()]
         let spyClosure: ([MenuItem]) -> [MenuSection] = { items in
             receivedMenu = items
             return expectedSections
         }
+        let expectedMenu = [MenuItem.fixture()]
+        // Use stub to simulate the system that fetches the data
+        let menuFetchingStub = MenuFetchingStub(returning: .success(expectedMenu))
         
-        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder(),
+        // Act
+        let viewModel = MenuList.ViewModel(menuFetching: menuFetchingStub,
                                            menuGrouping: spyClosure)
         // Expect asynchronous value
         let expectation = XCTestExpectation(description: "Publishes sections built from received menu and given grouping closure")
         
+        // Assert
         viewModel
-            .$sections
-            .dropFirst()
-            .sink { value in
+            .$sections         // listen to published value
+            .dropFirst()       // drop first one (initialized value)
+            .sink { value in   // use .sink() to subscribe publisher
                 // Ensure the grouping closure is called with the received menu
-                XCTAssertEqual(receivedMenu, MockData().menu)
+                XCTAssertEqual(receivedMenu, expectedMenu)
                 // Ensure the published value is the result of the grouping closure
                 XCTAssertEqual(value, expectedSections)
                 expectation.fulfill()
             }
-            .store(in: &cancellables)
+            .store(in: &cancellables) // should store async value's ref
         
         wait(for: [expectation], timeout: 1)
         
