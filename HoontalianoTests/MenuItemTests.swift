@@ -44,4 +44,17 @@ final class MenuItemTests: XCTestCase {
         XCTAssertEqual(item.price, 1.11)
     }
     
+    func test_DecodeListOfMenuItems() throws {
+        // Arrange
+        let json1 = MenuItem.jsonFixture(name: "One")
+        let json2 = MenuItem.jsonFixture(name: "Two")
+        let json3 = MenuItem.jsonFixture(name: "Three")
+        let data = try XCTUnwrap("[\(json1), \(json2), \(json3)]".data(using: .utf8))
+        
+        // Act
+        let item = try JSONDecoder().decode([MenuItem].self, from: data)
+        
+        // Assert
+        XCTAssertEqual(item.count, 3)
+    }
 }
