@@ -19,6 +19,7 @@
 		9863DCD62A8D336A000F1FA3 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD52A8D336A000F1FA3 /* MenuFetching.swift */; };
 		9863DCD82A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCD72A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift */; };
 		9863DCDB2A8DAF47000F1FA3 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCDA2A8DAF47000F1FA3 /* MenuFetchingStub.swift */; };
+		9863DCDE2A8DE3E1000F1FA3 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCDD2A8DE3E1000F1FA3 /* TestError.swift */; };
 		98CA0C5D2A8C9CC600BCEB67 /* HoontalianoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */; };
 		98CA0C5F2A8C9CC600BCEB67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */; };
 		98CA0C612A8C9CC700BCEB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CA0C602A8C9CC700BCEB67 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		9863DCD52A8D336A000F1FA3 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
 		9863DCD72A8D33FF000F1FA3 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
 		9863DCDA2A8DAF47000F1FA3 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
+		9863DCDD2A8DE3E1000F1FA3 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 		98CA0C592A8C9CC600BCEB67 /* Hoontaliano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoontaliano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CA0C5C2A8C9CC600BCEB67 /* HoontalianoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoontalianoApp.swift; sourceTree = "<group>"; };
 		98CA0C5E2A8C9CC600BCEB67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		9863DCDC2A8DE3D6000F1FA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9863DCDD2A8DE3E1000F1FA3 /* TestError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		98CA0C502A8C9CC600BCEB67 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +189,7 @@
 		98CA0C6D2A8C9CC700BCEB67 /* HoontalianoTests */ = {
 			isa = PBXGroup;
 			children = (
+				9863DCDC2A8DE3D6000F1FA3 /* Models */,
 				9863DCD92A8DAF34000F1FA3 /* Utils */,
 				9863DCC22A8D1F0D000F1FA3 /* Extensions */,
 				98CA0C6E2A8C9CC700BCEB67 /* HoontalianoTests.swift */,
@@ -350,6 +361,7 @@
 				9863DCD12A8D2BF7000F1FA3 /* MenuListViewModelTests.swift in Sources */,
 				98CA0C6F2A8C9CC700BCEB67 /* HoontalianoTests.swift in Sources */,
 				9863DCC42A8D1F21000F1FA3 /* MenuItem+Fixture.swift in Sources */,
+				9863DCDE2A8DE3E1000F1FA3 /* TestError.swift in Sources */,
 				9863DCCC2A8D255D000F1FA3 /* MenuRowViewModelTests.swift in Sources */,
 				98CA0C882A8C9D4100BCEB67 /* MenuGroupingTests.swift in Sources */,
 				9863DCDB2A8DAF47000F1FA3 /* MenuFetchingStub.swift in Sources */,

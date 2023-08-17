@@ -23,13 +23,17 @@ extension MenuList {
                 .fetchMenu()
                 // .sink will attach subscriber to the publisher
                 .sink(
-                    receiveCompletion: { _ in },
                     // Since menuFetching is async behavior,
                     // the ViewModel class might be already dismissed
                     // by the time when the operation is finished.
                     //
                     // So we put [weak self], and since self might be nil,
                     // we should also access its property optionally.
+                    receiveCompletion: { [weak self] completion in
+                        guard case .failure(let error) = completion else { return }
+                        
+                        self?.sections = .failure(error)
+                    },
                     receiveValue: { [weak self] value in
                         self?.sections = .success(menuGrouping(value))
                     }
