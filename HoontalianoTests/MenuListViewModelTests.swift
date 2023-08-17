@@ -13,27 +13,12 @@ final class MenuListViewModelTests: XCTestCase {
     
     var cancellables = Set<AnyCancellable>()
     
-    func test_CallsGivenGroupingFunction() {
-        var called = false
-        let inputSections = [MenuSection.fixture()]
-        let spyClosure: ([MenuItem]) -> [MenuSection] = { items in
-            called = true
-            return inputSections
-        }
-        
-        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder(),
-                                           menuGrouping: spyClosure)
-        let sections = viewModel.sections
-        
-        XCTAssertTrue(called)
-        XCTAssertEqual(sections, inputSections)
-    }
-    
-    func test_WhenFetchingStarts() {
+    func test_WhenFetchingStarts() throws {
         /// When fetching starts, the `ViewModel` should publish empty menu
         let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder())
         
-        XCTAssertTrue(viewModel.sections.isEmpty)
+        let sections = try viewModel.sections.get() // .get() returns success value
+        XCTAssertTrue(sections.isEmpty)
     }
     
     func test_WhenFetchingSucceeds() {
@@ -58,10 +43,14 @@ final class MenuListViewModelTests: XCTestCase {
             .$sections         // listen to published value
             .dropFirst()       // drop first one (initialized value)
             .sink { value in   // use .sink() to subscribe publisher
+                // Fail if value is .failure()
+                guard case .success(let sections) = value else {
+                    return XCTFail("Expected a successful Result, got: \(value)")
+                }
                 
                 // Assert
                 XCTAssertEqual(receivedMenu, expectedMenu)
-                XCTAssertEqual(value, expectedSections)
+                XCTAssertEqual(sections, expectedSections)
                 
                 // We have to tell that expectation has been fulfilled,
                 // or else it will hang until timeout.

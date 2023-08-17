@@ -11,7 +11,7 @@ extension MenuList {
     
     
     class ViewModel: ObservableObject {
-        @Published private(set) var sections: [MenuSection]
+        @Published private(set) var sections: Result<[MenuSection], Error> = .success([])
         var cancellables = Set<AnyCancellable>()
         
         init(
@@ -19,7 +19,6 @@ extension MenuList {
             menuGrouping: @escaping ([MenuItem]) -> [MenuSection]
                           = groupMenuByCategory
         ) {
-            self.sections = menuGrouping([])
             menuFetching
                 .fetchMenu()
                 // .sink will attach subscriber to the publisher
@@ -32,7 +31,7 @@ extension MenuList {
                     // So we put [weak self], and since self might be nil,
                     // we should also access its property optionally.
                     receiveValue: { [weak self] value in
-                        self?.sections = menuGrouping(value)
+                        self?.sections = .success(menuGrouping(value))
                     }
                 )
                 // we should store the async value's memory reference
