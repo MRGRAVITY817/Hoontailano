@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9809AF262A8DEF2400816FED /* menu_item.json in Resources */ = {isa = PBXBuildFile; fileRef = 9809AF252A8DEF2400816FED /* menu_item.json */; };
+		9809AF282A8DF14C00816FED /* MenuItem+JSONFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9809AF272A8DF14C00816FED /* MenuItem+JSONFixture.swift */; };
 		9863DCC12A8CB946000F1FA3 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCC02A8CB945000F1FA3 /* MenuList.swift */; };
 		9863DCC42A8D1F21000F1FA3 /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCC32A8D1F21000F1FA3 /* MenuItem+Fixture.swift */; };
 		9863DCC62A8D227D000F1FA3 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863DCC52A8D227D000F1FA3 /* MenuSection+Fixture.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		9809AF252A8DEF2400816FED /* menu_item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu_item.json; sourceTree = "<group>"; };
+		9809AF272A8DF14C00816FED /* MenuItem+JSONFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+JSONFixture.swift"; sourceTree = "<group>"; };
 		9863DCC02A8CB945000F1FA3 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		9863DCC32A8D1F21000F1FA3 /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
 		9863DCC52A8D227D000F1FA3 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9863DCC32A8D1F21000F1FA3 /* MenuItem+Fixture.swift */,
+				9809AF272A8DF14C00816FED /* MenuItem+JSONFixture.swift */,
 				9863DCC52A8D227D000F1FA3 /* MenuSection+Fixture.swift */,
 			);
 			path = Extensions;
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9863DCC62A8D227D000F1FA3 /* MenuSection+Fixture.swift in Sources */,
+				9809AF282A8DF14C00816FED /* MenuItem+JSONFixture.swift in Sources */,
 				9863DCD12A8D2BF7000F1FA3 /* MenuListViewModelTests.swift in Sources */,
 				98CA0C6F2A8C9CC700BCEB67 /* HoontalianoTests.swift in Sources */,
 				9863DCC42A8D1F21000F1FA3 /* MenuItem+Fixture.swift in Sources */,
