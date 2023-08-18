@@ -15,10 +15,7 @@ extension MenuItemDetail {
         private let orderController: OrderController
         private var cancellables = Set<AnyCancellable>()
         
-        // TODO: Using default value fo OrderController while
-        // working on the view-model implementation.
-        // We'll remove it once done and inject it from the view.
-        init(item: MenuItem, orderController: OrderController = OrderController()) {
+        init(item: MenuItem, orderController: OrderController) {
             self.item = item
             self.orderController = orderController
             

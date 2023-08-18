@@ -8,13 +8,40 @@
 import SwiftUI
 
 struct MenuItemDetail: View {
+    
+    @ObservedObject private(set) var viewModel: ViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            
+            Text(viewModel.item.name)
+                .bold()
+                .font(.title2)
+                .padding()
+            
+            Text("$\(viewModel.item.price, specifier: "%.2f")")
+                .font(.body)
+            
+            Spacer()
+            
+            Button {
+                viewModel.addOrRemoveFromOrder()
+            } label: {
+                Text(viewModel.addOrRemoveFromOrderButtonText)
+                    .frame(width: 200, height: 40)
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+                    .fontWeight(.semibold)
+            }
+            .padding()
+        }
     }
 }
 
 struct MenuItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItemDetail()
+        MenuItemDetail(viewModel: .init(item: MockData().menu[0], orderController: OrderController()))
     }
 }

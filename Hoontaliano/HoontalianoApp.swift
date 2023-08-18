@@ -9,12 +9,16 @@ import SwiftUI
 
 @main
 struct HoontalianoApp: App {
+    
+    let orderController = OrderController()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder()))
                     .navigationTitle("Hoontalia 🇮🇹🇰🇷")
             }
+            .environmentObject(orderController)
         }
     }
 }

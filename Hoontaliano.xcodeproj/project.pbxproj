@@ -128,8 +128,8 @@
 		9809AF3A2A8F232600816FED /* MenuItemDetail */ = {
 			isa = PBXGroup;
 			children = (
-				9809AF3B2A8F233A00816FED /* MenuItemDetail.ViewModel.swift */,
 				9809AF3D2A8F251200816FED /* MenuItemDetail.swift */,
+				9809AF3B2A8F233A00816FED /* MenuItemDetail.ViewModel.swift */,
 			);
 			name = MenuItemDetail;
 			sourceTree = "<group>";
