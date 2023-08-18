@@ -8,7 +8,7 @@
 @testable import Hoontaliano
 import XCTest
 
-final class MenuItemDetail: XCTestCase {
+final class MenuItemDetailTests: XCTestCase {
     
     func test_WhenItemIsInOrder_ButtonSaysRemove() {
         // Arrange
@@ -17,7 +17,7 @@ final class MenuItemDetail: XCTestCase {
         let viewModel = MenuItemDetail.ViewModel(item: item, orderController: orderController)
         
         // Act
-        let text = viewModel.addOrRemoveFromOrderButtonText()
+        let text = viewModel.addOrRemoveFromOrderButtonText
         
         // Assert
         XCTAssertEqual(text, "Remove from order")

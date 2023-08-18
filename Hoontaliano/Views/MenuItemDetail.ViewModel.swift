@@ -9,6 +9,7 @@ import Combine
 
 extension MenuItemDetail {
     struct ViewModel {
+        let item: MenuItem
         let addOrRemoveFromOrderButtonText = "Remove from order"
         private let orderController: OrderController
         
