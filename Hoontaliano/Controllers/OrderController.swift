@@ -16,13 +16,14 @@ class OrderController: ObservableObject {
     }
     
     func isItemInOrder(_ item: MenuItem) -> Bool {
-        return true
+        return self.order.items.contains { $0 == item }
     }
     
     func addToOrder(item: MenuItem) {
+        self.order = Order(items: self.order.items + [item])
     }
     
     func removeFromOrder(item: MenuItem) {
-        
+        self.order = Order(items: self.order.items.filter{ $0 != item })
     }
 }
